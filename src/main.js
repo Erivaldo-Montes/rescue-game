@@ -53,6 +53,13 @@ export const startGame = () => {
 };
 
 export function stopGame() {
+  $("#player").remove();
+  $("#enemy1").remove();
+  $("#enemy2").remove();
+  $("#friend").remove();
+  $("#boss").remove();
+  $("#bossshot").remove();
+  $("#bossLife").remove();
   window.clearInterval(loopGame);
   loopGame = null;
 }

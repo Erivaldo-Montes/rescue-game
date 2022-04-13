@@ -38,14 +38,6 @@ export const lifes = {
       $("#gameOver").click(() => {
         location.reload();
       });
-
-      $("#player").remove();
-      $("#enemy1").remove();
-      $("#enemy2").remove();
-      $("#friend").remove();
-      $("#boss").remove();
-      $("#bossshot").remove();
-      $("#bossLife").remove();
     }
   },
 };
