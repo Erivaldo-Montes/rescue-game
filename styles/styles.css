@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+
+  padding: 0;
+}
+
+@font-face {
+  font-family: titulo;
+  src: url(../public/assets/fonts/ANODETONOONE.TTF);
+}
+body {
+  background-image: url(../public/assets/images/fundo.jpg);
+}
+
+#container {
+  width: 950px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+h1 {
+  font-family: titulo;
+  font-size: 40px;
+  color: rgb(42, 84, 0);
+  margin: 30px;
+}
+
+/* background of game */
+#backgroundGame {
+  background-image: url(../public/assets/images/fundo_game.jpg);
+  height: 630px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+}
+
+#box {
+  width: 1200px;
+  height: 630px;
+  position: absolute;
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+
+  overflow: hidden;
+}
+
+/* inital window of game */
+#startWindow {
+  background-color: azure;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  padding: 10px;
+  border-style: ridge;
+}
+
+/* player */
+
+#player {
+  background-image: url(../public/assets/images/apache.png);
+  height: 67px;
+  width: 256px;
+  position: absolute;
+  animation: playerAnimation 0.5s infinite;
+
+  -webkit-animation: playerAnimation 0.5s steps(2) infinite;
+  -moz-animation: playerAnimation 0.5s steps(2) infinite;
+  -o-animation: playerAnimation 0.5s steps(2) infinite;
+}
+
+@keyframes playerAnimation {
+  0% {
+    background-position: 0px;
+  }
+
+  100% {
+    background-position: 512px;
+  }
+}
+
+@-moz-keyframes enemyAnimation {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 512px;
+  }
+}
+
+@-o-keyframes enemyAnimation {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 512px;
+  }
+}
+
+@-webkit-keyframes enemyAnimation {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 512px;
+  }
+}
+
+#lifes {
+  height: 38px;
+  width: 140px;
+  position: absolute;
+  top: 580px;
+  left: 1000px;
+}
+
+.life3 {
+  background-image: url(../public/assets/images/energia3.png);
+}
+.life2 {
+  background-image: url(../public/assets/images/energia2.png);
+}
+
+.life1 {
+  background-image: url(../public/assets/images/energia1.png);
+}
+
+.life0 {
+  background-image: url(../public/assets/images/energia0.png);
+}
+
+/* =========== enemy1 ========== */
+
+#enemy1 {
+  background-image: url(../public/assets/images/inimigo1.png);
+  position: absolute;
+  width: 256px;
+  height: 67px;
+  left: 1256px;
+  animation: enemyAnimation 0.5s steps(2) infinite;
+
+  -webkit-animation: enemyAnimation 0.5s steps(2) infinite;
+  -moz-animation: enemyAnimation 0.5s steps(2) infinite;
+  -o-animation: enemyAnimation 0.5s steps(2) infinite;
+}
+
+@keyframes enemyAnimation {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 512px;
+  }
+}
+
+@-moz-keyframes playerAnimation {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 512px;
+  }
+}
+
+@-o-keyframes playerAnimation {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 512px;
+  }
+}
+
+@-webkit-keyframes playerAnimation {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 512px;
+  }
+}
+
+/* ==========enemy2=========== */
+
+#enemy2 {
+  background-image: url(../public/assets/images/inimigo2.png);
+  position: absolute;
+  width: 165px;
+  height: 70px;
+  left: 1000px;
+  top: 430px;
+}
+
+/* +++= friend ====+ */
+
+#friend {
+  background-image: url(../public/assets/images/amigo.png);
+  height: 51px;
+  width: 44px;
+  position: absolute;
+  top: 450px;
+  animation: friendAnimation 2s steps(12) infinite;
+}
+
+@keyframes friendAnimation {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 528px;
+  }
+}
+
+.friendDead {
+  background-image: url(../public/assets/images/amigo_morte.png);
+  height: 51px;
+  width: 44px;
+  position: absolute;
+  animation: friendDead 1s steps(7) infinite;
+}
+
+@keyframes friendDead {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: 308px;
+  }
+}
+
+/* ===== shot ===== */
+#shot {
+  background-image: url(../public/assets/images/disparo.png);
+  height: 8px;
+  width: 50px;
+  position: absolute;
+}
+
+/* ======= explsion ========= */
+.explosion {
+  height: 139px;
+  width: 139px;
+  background-image: url(../public/assets/images/explosion-bigger.png);
+  position: absolute;
+  animation: explosion 0.5s steps(16) infinite reverse;
+}
+
+@keyframes explosion {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 2224px;
+  }
+}
+
+/* ===== score ====== */
+
+#score {
+  position: absolute;
+  font-family: titulo;
+  top: 550px;
+  left: 50px;
+  color: white;
+  font-size: 10px;
+}
+
+/* ==== game over ====== */
+
+#gameOver {
+  background-color: aquamarine;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 500px;
+  text-align: center;
+  margin-top: 50px;
+  border-style: double;
+}
+
+/* boss animation */
+#boss {
+  background-image: url(../public/assets/images/AH-64A\ Apache.jpg);
+  width: 237px;
+  height: 80px;
+  left: 1200px;
+  position: absolute;
+  animation: play 0.5s steps(2) infinite;
+}
+@keyframes play {
+  to {
+    background-position: 0;
+  }
+  from {
+    background-position: 475px;
+  }
+}
+
+#bossshot {
+  position: absolute;
+  width: 111px;
+  object-fit: contain;
+  height: 40px;
+  background-image: url(../public/assets/images/AIM-9\ Sidewinder.png);
+}
+#bossLife {
+  height: 38px;
+  width: 135px;
+  left: 1000px;
+  top: 10px;
+  position: absolute;
+}
+.bossLife3 {
+  background-image: url(../public/assets/images/boss\ life\ 3.png);
+}
+
+.bossLife2 {
+  background-image: url(../public/assets/images/boss_life_2.png);
+}
+
+.bossLife1 {
+  background-image: url(../public/assets/images/boss_life_1.png);
+}

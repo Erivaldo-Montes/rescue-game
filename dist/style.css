@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+
+  padding: 0;
+}
+
+@font-face {
+  font-family: titulo;
+  src: url(/13f1a453c1e41c3e67a4.TTF);
+}
+body {
+  background-image: url(/1d3ed2bf79b66dbfa930.jpg);
+}
+
+#container {
+  width: 950px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+h1 {
+  font-family: titulo;
+  font-size: 40px;
+  color: rgb(42, 84, 0);
+  margin: 30px;
+}
+
+/* background of game */
+#backgroundGame {
+  background-image: url(/4948a2c8c665f68de586.jpg);
+  height: 630px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+}
+
+#box {
+  width: 1200px;
+  height: 630px;
+  position: absolute;
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+
+  overflow: hidden;
+}
+
+/* inital window of game */
+#startWindow {
+  background-color: azure;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  padding: 10px;
+  border-style: ridge;
+}
+
+/* player */
+
+#player {
+  background-image: url(/7c6059aa5ffd8dccaf85.png);
+  height: 67px;
+  width: 256px;
+  position: absolute;
+  animation: playerAnimation 0.5s infinite;
+
+  -webkit-animation: playerAnimation 0.5s steps(2) infinite;
+  -moz-animation: playerAnimation 0.5s steps(2) infinite;
+  -o-animation: playerAnimation 0.5s steps(2) infinite;
+}
+
+@keyframes playerAnimation {
+  0% {
+    background-position: 0px;
+  }
+
+  100% {
+    background-position: 512px;
+  }
+}
+
+@-moz-keyframes enemyAnimation {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 512px;
+  }
+}
+
+@-o-keyframes enemyAnimation {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 512px;
+  }
+}
+
+@-webkit-keyframes enemyAnimation {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 512px;
+  }
+}
+
+#lifes {
+  height: 38px;
+  width: 140px;
+  position: absolute;
+  top: 580px;
+  left: 1000px;
+}
+
+.life3 {
+  background-image: url(/41fe52eca253aa67de39.png);
+}
+.life2 {
+  background-image: url(/f139d957bfe0d48a9d94.png);
+}
+
+.life1 {
+  background-image: url(/ff3e45c643f3634a690b.png);
+}
+
+.life0 {
+  background-image: url(/59c3cdd237f353dfaecc.png);
+}
+
+/* =========== enemy1 ========== */
+
+#enemy1 {
+  background-image: url(/c5cb922771f87c1b8c25.png);
+  position: absolute;
+  width: 256px;
+  height: 67px;
+  left: 1256px;
+  animation: enemyAnimation 0.5s steps(2) infinite;
+
+  -webkit-animation: enemyAnimation 0.5s steps(2) infinite;
+  -moz-animation: enemyAnimation 0.5s steps(2) infinite;
+  -o-animation: enemyAnimation 0.5s steps(2) infinite;
+}
+
+@keyframes enemyAnimation {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 512px;
+  }
+}
+
+@-moz-keyframes playerAnimation {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 512px;
+  }
+}
+
+@-o-keyframes playerAnimation {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 512px;
+  }
+}
+
+@-webkit-keyframes playerAnimation {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 512px;
+  }
+}
+
+/* ==========enemy2=========== */
+
+#enemy2 {
+  background-image: url(/5b4e27fd3b981b3ef09e.png);
+  position: absolute;
+  width: 165px;
+  height: 70px;
+  left: 1000px;
+  top: 430px;
+}
+
+/* +++= friend ====+ */
+
+#friend {
+  background-image: url(/edc402d58e348a6c4f20.png);
+  height: 51px;
+  width: 44px;
+  position: absolute;
+  top: 450px;
+  animation: friendAnimation 2s steps(12) infinite;
+}
+
+@keyframes friendAnimation {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 528px;
+  }
+}
+
+.friendDead {
+  background-image: url(/215626e5850af152fb11.png);
+  height: 51px;
+  width: 44px;
+  position: absolute;
+  animation: friendDead 1s steps(7) infinite;
+}
+
+@keyframes friendDead {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: 308px;
+  }
+}
+
+/* ===== shot ===== */
+#shot {
+  background-image: url(/729393a9d1d010f5eda9.png);
+  height: 8px;
+  width: 50px;
+  position: absolute;
+}
+
+/* ======= explsion ========= */
+.explosion {
+  height: 139px;
+  width: 139px;
+  background-image: url(/0c65ca8dc75ddd51cb0e.png);
+  position: absolute;
+  animation: explosion 0.5s steps(16) infinite reverse;
+}
+
+@keyframes explosion {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 2224px;
+  }
+}
+
+/* ===== score ====== */
+
+#score {
+  position: absolute;
+  font-family: titulo;
+  top: 550px;
+  left: 50px;
+  color: white;
+  font-size: 10px;
+}
+
+/* ==== game over ====== */
+
+#gameOver {
+  background-color: aquamarine;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 500px;
+  text-align: center;
+  margin-top: 50px;
+  border-style: double;
+}
+
+/* boss animation */
+#boss {
+  background-image: url(/73574adf47d0f531b033.jpg);
+  width: 237px;
+  height: 80px;
+  left: 1200px;
+  position: absolute;
+  animation: play 0.5s steps(2) infinite;
+}
+@keyframes play {
+  to {
+    background-position: 0;
+  }
+  from {
+    background-position: 475px;
+  }
+}
+
+#bossshot {
+  position: absolute;
+  width: 111px;
+  object-fit: contain;
+  height: 40px;
+  background-image: url(/3b18e376c37ff86019fb.png);
+}
+#bossLife {
+  height: 38px;
+  width: 135px;
+  left: 1000px;
+  top: 10px;
+  position: absolute;
+}
+.bossLife3 {
+  background-image: url(/b48166604c81a1d472e9.png);
+}
+
+.bossLife2 {
+  background-image: url(/af1591dde464a15f1996.png);
+}
+
+.bossLife1 {
+  background-image: url(/7a087070f4fea40a8728.png);
+}
+
+
+/*# sourceMappingURL=style.css.map*/
