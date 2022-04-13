@@ -1,4 +1,4 @@
-resgate.
+# resgate.
 
 este é um jogo que tem por objetivo resgtar os personagem que aparecem no canto inferior esquerdo da tela.
 Para resgatar os personagems usa-se os teclas W e S do teclado para mover o helicoptero para cima e para baixo respectivamente até estar sobre o refém.
