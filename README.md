@@ -1,6 +1,18 @@
 
 # Jogo resgate
 
+<div style="display: flex; gap: 20px;">
+<img src="./public/assets/images/jquery.png" title="jquery" alt="jquery" height="60px">
+<img src="./public/assets/images/node.png" title="node"alt="jquery" height="60px">
+<img src="./public/assets/images/webpack.png" title="webpack" alt="jquery" height="60px">
+<img src="./public/assets/images/babel.png" title="babel" alt="jquery" height="60px">
+</div>
+
+<div style="display: flex; gap: 20px; margin-top: 100px;">
+<img src="./public/assets/images/Captura de tela_2022-06-08_19-25-58.png" alt="Jogo resgate" width="40%">
+<img src="./public/assets/images/Captura de tela_2022-06-08_21-37-01.png" alt="Jogo resgate" width="40%">
+</div>
+
 ## Introdução
 Esse projeto de um jogo que tem como o objetivo resgatar os priseiro que tentam escapar da prisão, mas 
 está sendo caçados pelos inimigos, para isso os aliados enviaram sua arma especial que é um helicóptero super avançado com habilidades jamais vistas, mas para pilotar esse helicóptero é necessário um piloto de confiaça.
@@ -28,7 +40,7 @@ Esse projeto foi feito com:
 
 - [webpack-cli](https://webpack.js.org/configuration/) - webpack-cli é um gerenciador de configuração do Webpack.
 
--[webpack-dev-server](https://webpack.js.org/configuration/) - webpack-dev-server é um servidor de desenvolvimento Webpack.
+- [webpack-dev-server](https://webpack.js.org/configuration/) - webpack-dev-server é um servidor de desenvolvimento Webpack.
 
 ## instalação
 
@@ -41,4 +53,14 @@ ou
 npm install
 ```
 
+Ao executar o jogo no modo de desenvolvimento use o comando:
+```sh
+yarn start
+```
+
+Se quiser executar o jogo no modo de produção use o comando:
+```sh
+yarn build
+```
+que irá fazer o build do projeto na pasta dist e você deve exexutar o arquivo dist/index.html
 
