@@ -16,19 +16,19 @@ A cada 1000 pontos surge um inimigo poderoso
 ## Tecnologias
 
 Esse projeto foi feito com:
-[webpack]("https://webpack.js.org/") - O Webpack é um empacotador de módulos gratuito e de código aberto para JavaScript.
+- [webpack](https://webpack.js.org/) - O Webpack é um empacotador de módulos gratuito e de código aberto para JavaScript.
 
-- [jquery]("https://jquery.com/") -jQuery é uma biblioteca de funções JavaScript que interage com o HTML, desenvolvida para simplificar os scripts interpretados no navegador do cliente.
+- [jquery](https://jquery.com/) -jQuery é uma biblioteca de funções JavaScript que interage com o HTML, desenvolvida para simplificar os scripts interpretados no navegador do cliente.
 
-- [yarn]("https://yarnpkg.com/") - yarn é um pacote de gerenciador de dependências para Node.js.
+- [yarn](https://yarnpkg.com/) - yarn é um pacote de gerenciador de dependências para Node.js.
 
-- [node]("https://nodejs.org/en/") - Node.js é um software livre, aberto-contratado, baseado na plataforma do Linux, que é uma plataforma de código aberto para o desenvolvimento de aplicações de servidor.
+- [node](https://nodejs.org/en/) - Node.js é um software livre, aberto-contratado, baseado na plataforma do Linux, que é uma plataforma de código aberto para o desenvolvimento de aplicações de servidor.
 
-- [babel]("https://babeljs.io/") - Babel é um transpiler de JavaScript.
+- [babel](https://babeljs.io/) - Babel é um transpiler de JavaScript.
 
-- [webpack-cli]("https://webpack.js.org/configuration/") - webpack-cli é um gerenciador de configuração do Webpack.
+- [webpack-cli](https://webpack.js.org/configuration/) - webpack-cli é um gerenciador de configuração do Webpack.
 
--[webpack-dev-server]("https://webpack.js.org/configuration/") - webpack-dev-server é um servidor de desenvolvimento Webpack.
+-[webpack-dev-server](https://webpack.js.org/configuration/) - webpack-dev-server é um servidor de desenvolvimento Webpack.
 
 ## instalação
 
