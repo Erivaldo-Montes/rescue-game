@@ -16,7 +16,7 @@ A cada 1000 pontos surge um inimigo poderoso
 ## Tecnologias
 
 Esse projeto foi feito com:
-- [webpack]("https://webpack.js.org/") - O Webpack é um empacotador de módulos gratuito e de código aberto para JavaScript.
+[webpack]("https://webpack.js.org/") - O Webpack é um empacotador de módulos gratuito e de código aberto para JavaScript.
 
 - [jquery]("https://jquery.com/") -jQuery é uma biblioteca de funções JavaScript que interage com o HTML, desenvolvida para simplificar os scripts interpretados no navegador do cliente.
 
