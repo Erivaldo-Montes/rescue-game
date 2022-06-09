@@ -64,3 +64,6 @@ yarn build
 ```
 que irá fazer o build do projeto na pasta dist e você deve exexutar o arquivo dist/index.html
 
+
+Preferencialmente execute no navegador [firefox](https://www.mozilla.org/pt-BR/firefox/new/)
+
